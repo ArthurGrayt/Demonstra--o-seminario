@@ -1,0 +1,26 @@
+{
+  "name": "sd",
+  "version": "1.0.0",
+  "description": "Projeto Kafka em Node.js com TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:producer": "ts-node academico-producer.ts",
+    "start:historico": "ts-node historico-consumer.ts",
+    "start:notificacao": "ts-node notificacao-consumer.ts",
+    "docker:up": "docker compose up -d",
+    "docker:down": "docker compose down"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "kafkajs": "^2.2.4"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
